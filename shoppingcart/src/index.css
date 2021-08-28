@@ -1,0 +1,14 @@
+.shoppingCartTitle {
+  text-align: left;
+  padding: 10px;
+}
+
+.mainCart {
+  align-content: center;
+  background-color: lightgray;
+  border-radius: 0.5em;
+}
+
+body {
+  background-color: white;
+}
