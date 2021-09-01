@@ -2,8 +2,8 @@
 // Created on Aug 31, 2021
 import React, { useState } from "react";
 import { ThemeProvider } from "styled-components";
-import { GlobalStyles } from "./theme/globalStyles";
-import { lightTheme, darkTheme } from "./theme/Themes";
+import { GlobalStyles } from "./globalStyles";
+import { lightTheme, darkTheme } from "./Themes";
 
 export default function ThemeToggle() {
   const [theme, setTheme] = useState("Light");

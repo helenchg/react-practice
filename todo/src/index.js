@@ -1,8 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Counter from "./counter";
-import ThemeToggle from "./themetoggle";
-import "./index.css";
+import ThemeToggle from "./components/theme/themetoggle";
+import { TodoList } from "./components/TodoList";
 
 function App() {
   return (
@@ -10,9 +9,7 @@ function App() {
       <h1>TODO REACT APP</h1>
       <span>
         <ThemeToggle />
-      </span>
-      <span>
-        <Counter />
+        <TodoList />
       </span>
     </div>
   );
