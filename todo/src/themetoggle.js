@@ -5,7 +5,7 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from "./theme/globalStyles";
 import { lightTheme, darkTheme } from "./theme/Themes";
 
-export default function Bgcolor() {
+export default function ThemeToggle() {
   const [theme, setTheme] = useState("Light");
 
   // function to toggle theme state between light or dark.

@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Counter from "./counter";
-import Bgcolor from "./bgcolor";
+import ThemeToggle from "./themetoggle";
 import "./index.css";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div>
       <h1>TODO REACT APP</h1>
       <span>
-        <Bgcolor />
+        <ThemeToggle />
       </span>
       <span>
         <Counter />
