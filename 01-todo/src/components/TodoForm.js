@@ -1,4 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
+import {
+  StyledTodoForm,
+  StyledTodoButton,
+  StyledInput,
+} from "../Styled/StyledTodoForm";
 // useRef for focus on ui element. in this case, we focus on texbox when refresh.
 function TodoForm(props) {
   const [input, setInput] = useState(props.edit ? props.edit.value : "");
@@ -27,36 +32,35 @@ function TodoForm(props) {
   };
 
   return (
-    <form className="todo-form" onSubmit={handleSubmit}>
+    <StyledTodoForm onSubmit={handleSubmit}>
       {props.edit ? (
         <>
-          <input
+          <StyledInput
+            edit
             type="text"
             placeholder="Update the todo"
             value={input}
             name="text"
-            className="todo-input edit"
             onChange={handleChange}
             ref={inputRef}
           />
-          <button className="todo-button edit">Update todo</button>
+          <StyledTodoButton edit>Update todo</StyledTodoButton>
         </>
       ) : (
         <>
           {" "}
-          <input
+          <StyledInput
             type="text"
             placeholder="Add a todo"
             value={input}
             name="text"
-            className="todo-input"
             onChange={handleChange}
             ref={inputRef}
           />
-          <button className="todo-button">Add todo</button>
+          <StyledTodoButton>Add todo</StyledTodoButton>
         </>
       )}
-    </form>
+    </StyledTodoForm>
   );
 }
 
