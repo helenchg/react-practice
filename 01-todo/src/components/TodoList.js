@@ -1,6 +1,7 @@
 // REACT TODO LIST TUTORIAL FROM https://www.youtube.com/watch?v=E1E08i2UJGI
 
 import React, { useState } from "react";
+import { TodoApp, Todoh1 } from "../Styled/StyledTodoList";
 import Todo from "./Todo";
 import TodoForm from "./TodoForm";
 
@@ -43,8 +44,8 @@ export function TodoList() {
   };
 
   return (
-    <div>
-      <h1>Today's Todos</h1>
+    <TodoApp>
+      <Todoh1>Today's Todos</Todoh1>
       <TodoForm onSubmit={addTodo} />
       <Todo
         todos={todos}
@@ -52,6 +53,6 @@ export function TodoList() {
         removeTodo={removeTodo}
         updateTodo={updateTodo}
       />
-    </div>
+    </TodoApp>
   );
 }
