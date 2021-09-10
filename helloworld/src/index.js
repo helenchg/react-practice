@@ -24,6 +24,7 @@ function HelloWorld() {
     <>
       <div className="dark">
         <h1>Hello</h1>hello world
+        <h2>test test</h2>
       </div>
       <div>
         <span>
