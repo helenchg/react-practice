@@ -24,13 +24,10 @@ function HelloWorld() {
     <>
       <div className="dark">
         <h1>Hello</h1>hello world
-<<<<<<< HEAD
         <h2>test test</h2>
-=======
         <h2>From Branch2</h2>
         <h3>From branch3</h3>
         <h3>From branch 5</h3>
->>>>>>> master
       </div>
       <div>
         <span>
