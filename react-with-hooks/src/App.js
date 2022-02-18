@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import "./App.css";
-import { Toggle } from "./Toggle";
+import { Toggle } from "./Toggle.js";
 
 function App() {
   const buttonRef = useRef(null);
